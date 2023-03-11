@@ -1,0 +1,72 @@
+@import url(../../fonts/fonts.css);
+@import url(../map.css);
+@import url(../lines.css);
+@import url(../maskTitle.css);
+@import url(../table.css);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1140px;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+}
+
+/* Animation */
+
+@keyframes letter{
+    0% {opacity: 0; transform: translateY(-15px)}
+    100% {opacity: 1; transform: translateY(0px)}
+}
+
+/* Header */
+
+.header {
+    padding-top: 10px;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.header__title {
+    font-weight: 600;
+    font-size: 20px;
+    margin-right: 40px;
+}
+
+.header__title span {
+    animation: letter 0.5s; 
+}
+
+.dn {
+    display: none;
+}
+
+.devices {
+    width: 40px;
+    height: 40px;
+}
+
+.circle:hover {
+    content: url('../../img/Elements_Old/circle_filled.png');
+}
+
+button {
+    height: 23px;
+    width: 80px;
+    background-color: lightgray;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    cursor: pointer;
+}

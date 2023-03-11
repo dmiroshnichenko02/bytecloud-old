@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "Montserrat-Italic";
+    src: local("Montserrat Italic VariableFont"),
+         local("Montserrat-Italic-VariableFont"),
+         url(../fonts/Montserrat-Italic-VariableFont_wght.ttf);
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat VariableFont"),
+         local("Montserrat VariableFont"),
+         url(../fonts/Montserrat-VariableFont_wght.ttf);
+    font-weight: 400;
+}

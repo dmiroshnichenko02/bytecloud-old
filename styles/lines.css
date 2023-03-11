@@ -1,0 +1,46 @@
+/* Lines */
+
+.line {
+    z-index: 8;
+    pointer-events: none;
+}
+
+.line__usa_low,
+.line__usa__europe,
+.line__usa__east,
+.line__usa__north-south,
+.line__usa__asia {
+    top: -13px;
+    left: -69px;
+}
+
+.line__south,
+.line__south__east,
+.line__south__asia,
+.line__south__europe,
+.line__south__north {
+    top: -13px;
+    left: -68px;
+}
+
+.line__europe-usa,
+.line__europe__europe,
+.line__europe__asia,
+.line__europe__east,
+.line__europe__south {
+    top: -14px;
+    left: -72px;
+}
+
+.line__asia-usa,
+.line__asia__europe,
+.line__asia,
+.line__asia__south {
+    top: -9px;
+    left: -73px;
+}
+
+.line__asia__east {
+    top: -9px;
+    left: -84px;
+}

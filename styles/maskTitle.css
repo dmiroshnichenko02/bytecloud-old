@@ -1,0 +1,40 @@
+
+.australia__device__mask_title {
+    font-size: 19px;
+    top: 609px;
+    right: 17px;
+    z-index: 10;
+    font-weight: bold;
+}
+
+.asia__device__mask_title {
+    font-size: 19px;
+    top: 180px;
+    left: 851px;
+    z-index: 10;
+    font-weight: bold;
+}
+
+.europe__device__mask_title {
+    top: 350px;
+    left: 490px;
+    font-size: 19px;
+    z-index: 10;
+    font-weight: bold;
+}
+
+.south__device__mask_title {
+    font-size: 19px;
+    top: 610px;
+    left: 185px;
+    z-index: 10;
+    font-weight: bold;
+}
+
+.north__device__mask_title {
+    font-size: 19px;
+    top: 190px;
+    left: -10px;
+    z-index: 10;
+    font-weight: bold;
+}

@@ -1,0 +1,320 @@
+/* Map */
+
+.map {
+    background: url(../img/Elements_Old/map.png) center center / contain no-repeat;
+    height: 700px;
+}
+
+
+.pos_rel {
+    position: relative;
+}
+
+.pos_abs {
+    position: absolute;
+    content: '';
+}
+
+
+.map__north__usa_step_first,
+.map__south__usa_step_first,
+.map__europe_step_first,
+.map__asia_step_first,
+.map__australia_step_first img {
+    cursor: pointer;
+}
+
+
+.map__north__usa_step_first {
+
+    top: 261px;
+    left: 173px;
+}
+
+.human_small {
+    width: 15px;
+    height: 30px;
+}
+
+.human_medium {
+    width: 20px;
+    height: 45px;
+}
+
+.human_high {
+    width: 25px;
+    height: 65px;
+}
+
+.map__south__usa_step_first {
+    top: 470px;
+    left: 316px;
+}
+
+.map__europe_step_first {
+    top: 240px;
+    left: 563px;
+}
+
+.map__asia_step_first {
+    top: 260px;
+    right: 200px;
+}
+
+.map__australia_step_first {
+    top: 508px;
+    right: 123px;
+}
+
+/* North devices */
+.map__north__usa_step_two .devices_small {
+    top: 280px;
+    left: 250px;
+}
+
+.north__device__mask_small,
+.south__device__mask_small,
+.europe__device__mask_small,
+.asia__device__mask_small,
+.australia__device__mask_small {
+    width: 33px;
+    height: 18px;
+}
+
+.north__device__mask_small span {
+    height: 100%;
+    z-index: 7;
+    top: 289px;
+    left: 253px;
+    background-color: blue;
+}
+
+.map__north__usa_step_two .devices_medium {
+    top: 310px;
+    left: 189px;
+}
+
+.north__device__mask_medium,
+.south__device__mask_medium,
+.europe__device__mask_medium,
+.asia__device__mask_medium,
+.australia__device__mask_medium {
+    width: 20px;
+    height: 28px;
+}
+
+.north__device__mask_medium span {
+    height: 100%;
+    z-index: 7;
+    top: 316px;
+    left: 199px;
+    background-color: blue;
+}
+
+.map__north__usa_step_two .devices_high {
+    top: 275px;
+    left: 139px;
+}
+
+.north__device__mask_high,
+.south__device__mask_high,
+.europe__device__mask_high,
+.asia__device__mask_high,
+.australia__device__mask_high {
+    width: 13px;
+    height: 7px;
+}
+
+.north__device__mask_high span {
+    height: 100%;
+    z-index: 7;
+    top: 287px;
+    left: 153px;
+    background-color: blue;
+}
+
+/* South devices */
+.map__south__usa_step_two .devices_small {
+    top: 488px;
+    left: 357px;
+}
+
+.south__device__mask_small span {
+    top: 497px;
+    left: 360px;
+    background-color: blue;
+    height: 100%;
+    z-index: 7;
+}
+
+.map__south__usa_step_two .devices_medium {
+    top: 542px;
+    left: 332px;
+}
+
+.south__device__mask_medium span {
+    top: 548px;
+    left: 342px;
+    background-color: blue;
+    height: 100%;
+    z-index: 7;
+}
+
+.map__south__usa_step_two .devices_high {
+    top: 469px;
+    left: 292px;
+}
+
+.south__device__mask_high span {
+    top: 481px;
+    left: 306px;
+    background-color: blue;
+    height: 100%;
+    z-index: 7;
+}
+
+/* Europe */
+.map__europe_step_two .devices_small {
+    top: 265px;
+    right: 500px;
+}
+
+.europe__device__mask_small span {
+    top: 274px;
+    left: 603px;
+    background-color: blue;
+    height: 100%;
+    z-index: 7;
+}
+
+.map__europe_step_two .devices_medium {
+    top: 301px;
+    left: 504px;
+}
+
+.europe__device__mask_medium span {
+    top: 307px;
+    left: 514px;
+    background-color: blue;
+    height: 100%;
+    z-index: 7;
+}
+
+.map__europe_step_two .devices_high {
+    top: 235px;
+    right: 428px;
+}
+
+.europe__device__mask_high span {
+    top: 247px;
+    left: 686px;
+    background-color: blue;
+    height: 100%;
+    z-index: 7;
+}
+
+.map__asia_step_two .devices_small {
+    top: 351px;
+    right: 205px;
+}
+
+.asia__device__mask_small span {
+    top: 360px;
+    left: 899px;
+    background-color: blue;
+    height: 100%;
+    z-index: 7;
+}
+
+.map__asia_step_two .devices_medium {
+    top: 370px;
+    right: 320px;
+}
+
+.asia__device__mask_medium span {
+    top: 376px;
+    left: 790px;
+    background-color: blue;
+    height: 100%;
+    z-index: 7;
+}
+
+.map__asia_step_two .devices_high {
+    top: 275px;
+    right: 145px;
+}
+
+.asia__device__mask_high span {
+    top: 287px;
+    left: 969px;
+    background-color: blue;
+    height: 100%;
+    z-index: 7;
+}
+
+.map__australia_step_two .devices_small {
+    top: 551px;
+    right: 81px;
+}
+
+.australia__device__mask_small span {
+    top: 560px;
+    left: 1022px;
+    background-color: blue;
+    height: 100%;
+    z-index: 7;
+}
+
+.map__australia_step_two .devices_medium {
+    top: 546px;
+    right: 185px;
+}
+
+.australia__device__mask_medium span {
+    top: 552px;
+    left: 925px;
+    background-color: blue;
+    height: 100%;
+    z-index: 7;
+}
+
+.map__australia_step_two .devices_high {
+    top: 546px;
+    right: 129px;
+}
+
+.australia__device__mask_high span {
+    top: 558px;
+    left: 985px;
+    background-color: blue;
+    height: 100%;
+    z-index: 7;
+}
+
+.map__north__usa_data img {
+    width: 40px;
+    height: 40px;
+    top: 294px;
+    left: 296px;
+}
+
+.map__south__usa_data img {
+    width: 40px;
+    height: 40px;
+    top: 302px;
+    left: 114px;
+}
+
+.map__europe_data img {
+    width: 40px;
+    height: 40px;
+    top: 262px;
+    left: 546px;
+}
+
+.map__asia_data img {
+    width: 40px;
+    height: 40px;
+    top: 468px;
+    right: 218px;
+}

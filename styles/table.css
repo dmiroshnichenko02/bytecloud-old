@@ -1,0 +1,76 @@
+/* Table */
+
+.table__wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 90px;
+    grid-auto-rows: 90px;
+    column-gap: 30px;
+    top: 70px;
+}
+
+.object__wrapper, .byteCloud__wrapper {
+    display: grid;
+    row-gap: 15px;
+}
+
+.table__byteCloud_box, .table__object {
+    border: 2px solid black;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 100px 227px 227px;
+    grid-template-rows: 30px 65px;
+    background-color: rgba(194, 240, 189, 1);
+}
+
+.table__object_box_regionName, .table__byteCloud_box_regionName {
+    grid-column: 1/3;
+    padding-left: 80px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.stars {
+    margin-left: auto;
+    width: 120px;
+    height: 20px;
+    object-fit: cover;
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.table__object_box_latency, .table__object_box_time, .table__object_box_video, .table__byteCloud_box_latency, .table__byteCloud_box_time, .table__byteCloud_box_video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    white-space: pre-line;
+    text-align: center;
+}
+
+.table__object_box_video, .table__byteCloud_box_video {
+    border-right: none;
+}
+
+.object__title {
+    top: 30px;
+    right: -975px;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.byteCloud__title {
+    top: 30px;
+    left: 190px;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.table {
+    z-index: 20;
+    top: -700px;
+    left: -13px;
+}

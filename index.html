@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/libs/normalize.css">
+    <link rel="stylesheet" href="./styles/libs/style.css">
+    <title>ByteCloud server map</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__title"></div>
+                <button class="header__btn dn">Next</button>
+                <button class="header__btn_cloud dn">Next</button>
+                <button class="header__btn_restart dn">Restart</button>
+            </div>
+        </div>
+    </header>
+    <main class="map">
+        <div class="container">
+            <div class="map__wrapper">
+                <div class="map__north__usa pos_rel">
+                    <div class="map__north__usa_step_first pos_abs">
+                        <img src="./img/Elements_Old/man_empty.png" alt="human small" class="human human_small">
+                        <img src="./img/Elements_Old/man_empty.png" alt="human medium" class="human human_medium">
+                        <img src="./img/Elements_Old/man_empty.png" alt="human high" class="human human_high">
+                    </div>
+                    <div class="map__north__usa_step_two pos_rel dn">
+                        <div class="north__device__mask_title pos_abs"></div>
+                        <div class="north__device__mask_small pos_abs">
+                            <span class="pos_abs n1"></span>
+                        </div>
+                        <div class="north__device__mask_medium pos_abs">
+                            <span class="pos_abs n2"></span>
+                        </div>
+                        <div class="north__device__mask_high pos_abs">
+                            <span class="pos_abs n3"></span>
+                        </div>
+                        <img src="./img/Elements_Old/small.png" alt="laptop" class="dn devices devices_small pos_abs">
+                        <img src="./img/Elements_Old/medium.png" alt="phone" class="dn devices devices_medium pos_abs">
+                        <img src="./img/Elements_Old/large.png" alt="small phone"
+                            class="dn devices devices_high pos_abs">
+                    </div>
+                    <div class="map__north__usa_data pos_rel">
+                        <img src="./img/Elements_Old/circle_empty.png" alt="cirlce" class="pos_abs circle dn"
+                            data-server="north">
+                    </div>
+                </div>
+                <div class="map__south__usa pos_rel">
+                    <div class="map__south__usa_step_first pos_abs">
+                        <img src="./img/Elements_Old/man_empty.png" alt="human small" class="human human_small">
+                        <img src="./img/Elements_Old/man_empty.png" alt="human medium" class="human human_medium">
+                        <img src="./img/Elements_Old/man_empty.png" alt="human high" class="human human_high">
+                    </div>
+                    <div class="map__south__usa_step_two pos_rel dn">
+                        <div class="south__device__mask_title pos_abs"></div>
+                        <div class="south__device__mask_small pos_abs">
+                            <span class="pos_abs n1"></span>
+                        </div>
+                        <div class="south__device__mask_medium pos_abs">
+                            <span class="pos_abs n2"></span>
+                        </div>
+                        <div class="south__device__mask_high pos_abs">
+                            <span class="pos_abs n3"></span>
+                        </div>
+                        <img src="./img/Elements_Old/small.png" alt="laptop" class="dn devices devices_small pos_abs">
+                        <img src="./img/Elements_Old/medium.png" alt="phone" class="dn devices devices_medium pos_abs">
+                        <img src="./img/Elements_Old/large.png" alt="small phone"
+                            class="dn devices devices_high pos_abs">
+                    </div>
+                    <div class="map__south__usa_data pos_rel">
+                        <img src="./img/Elements_Old/circle_empty.png" alt="cirlce" class="pos_abs circle dn"
+                            data-server="south">
+                    </div>
+                    <!-- south end -->
+                </div>
+                <div class="map__europe pos_rel">
+                    <div class="map__europe_step_first pos_abs">
+                        <img src="./img/Elements_Old/man_empty.png" alt="human small" class="human human_small">
+                        <img src="./img/Elements_Old/man_empty.png" alt="human medium" class="human human_medium">
+                        <img src="./img/Elements_Old/man_empty.png" alt="human high" class="human human_high">
+                    </div>
+                    <div class="map__europe_step_two pos_rel dn">
+                        <div class="europe__device__mask_title pos_abs"></div>
+                        <div class="europe__device__mask_small pos_abs">
+                            <span class="pos_abs n1"></span>
+                        </div>
+                        <div class="europe__device__mask_medium pos_abs">
+                            <span class="pos_abs n2"></span>
+                        </div>
+                        <div class="europe__device__mask_high pos_abs">
+                            <span class="pos_abs n3"></span>
+                        </div>
+                        <img src="./img/Elements_Old/small.png" alt="laptop" class="dn devices devices_small pos_abs">
+                        <img src="./img/Elements_Old/medium.png" alt="phone" class="dn devices devices_medium pos_abs">
+                        <img src="./img/Elements_Old/large.png" alt="small phone"
+                            class="dn devices devices_high pos_abs">
+                    </div>
+                    <div class="map__europe_data pos_rel">
+                        <img src="./img/Elements_Old/circle_empty.png" alt="cirlce" class="pos_abs circle dn"
+                            data-server="europe">
+                    </div>
+                </div>
+                <!-- europe -->
+                <div class="map__asia pos_rel">
+                    <div class="map__asia_step_first pos_abs">
+                        <img src="./img/Elements_Old/man_empty.png" alt="human small" class="human human_small">
+                        <img src="./img/Elements_Old/man_empty.png" alt="human medium" class="human human_medium">
+                        <img src="./img/Elements_Old/man_empty.png" alt="human high" class="human human_high">
+                    </div>
+                    <div class="map__asia_step_two pos_rel dn">
+                        <div class="asia__device__mask_title pos_abs"></div>
+                        <div class="asia__device__mask_small pos_abs">
+                            <span class="pos_abs n1"></span>
+                        </div>
+                        <div class="asia__device__mask_medium pos_abs">
+                            <span class="pos_abs n2"></span>
+                        </div>
+                        <div class="asia__device__mask_high pos_abs">
+                            <span class="pos_abs n3"></span>
+                        </div>
+                        <img src="./img/Elements_Old/small.png" alt="laptop" class="dn devices devices_small pos_abs">
+                        <img src="./img/Elements_Old/medium.png" alt="phone" class="dn devices devices_medium pos_abs">
+                        <img src="./img/Elements_Old/large.png" alt="small phone"
+                            class="dn devices devices_high pos_abs">
+                    </div>
+                    <div class="map__asia_data pos_rel">
+                        <img src="./img/Elements_Old/circle_empty.png" alt="cirlce" class="pos_abs circle dn"
+                            data-server="asia">
+                    </div>
+                </div>
+                <div class="map__australia pos_rel">
+                    <div class="map__australia_step_first pos_abs">
+                        <img src="./img/Elements_Old/man_empty.png" alt="human small" class="human human_small">
+                        <img src="./img/Elements_Old/man_empty.png" alt="human medium" class="human human_medium">
+                        <img src="./img/Elements_Old/man_empty.png" alt="human high" class="human human_high">
+                    </div>
+                    <div class="map__australia_step_two pos_rel dn">
+                        <div class="australia__device__mask_title pos_abs"></div>
+                        <div class="australia__device__mask_small pos_abs">
+                            <span class="pos_abs n1"></span>
+                        </div>
+                        <div class="australia__device__mask_medium pos_abs">
+                            <span class="pos_abs n2"></span>
+                        </div>
+                        <div class="australia__device__mask_high pos_abs">
+                            <span class="pos_abs n3"></span>
+                        </div>
+                        <img src="./img/Elements_Old/small.png" alt="laptop" class="dn devices devices_small pos_abs">
+                        <img src="./img/Elements_Old/medium.png" alt="phone" class="dn devices devices_medium pos_abs">
+                        <img src="./img/Elements_Old/large.png" alt="small phone"
+                            class="dn devices devices_high pos_abs">
+                    </div>
+                </div>
+                <div class="lines">
+                    <div class="north__lines">
+                        <div class="map__north__usa__lines pos_rel">
+                            <img src="./img/Elements_Old/arc_east-usa_north-america_small.png" alt="line"
+                                class="line line__usa_low pos_abs dn">
+                            <img src="./img/Elements_Old/arc_east-usa_north-america_medium.png" alt="line"
+                                class="line line__usa_low pos_abs dn">
+                            <img src="./img/Elements_Old/arc_east-usa_north-america_large.png" alt="line"
+                                class="line line__usa_low pos_abs dn">
+                        </div>
+                        <div class="map__north__usa__europe__lines pos_rel">
+                            <img src="./img/Elements_Old/arc_east-usa_europe_small.png" alt="lines"
+                                class="line line__usa__europe pos_abs dn">
+                            <img src="./img/Elements_Old/arc_east-usa_europe_medium.png" alt="lines"
+                                class="line line__usa__europe pos_abs dn">
+                            <img src="./img/Elements_Old/arc_east-usa_europe_large.png" alt="lines"
+                                class="line line__usa__europe pos_abs dn">
+                        </div>
+                        <div class="map__north__usa__asia__lines pos_rel">
+                            <img src="./img/Elements_Old/arc_east-usa_asia_small.png" alt="lines"
+                                class="line line__usa__asia pos_abs dn">
+                            <img src="./img/Elements_Old/arc_east-usa_asia_medium.png" alt="lines"
+                                class="line line__usa__asia pos_abs dn">
+                            <img src="./img/Elements_Old/arc_east-usa_asia_large.png" alt="lines"
+                                class="line line__usa__asia pos_abs dn">
+                        </div>
+                        <div class="map__north__usa__oceania__lines pos_rel">
+                            <img src="./img/Elements_Old/arc_east-usa_oceania_small.png" alt="lines"
+                                class="line line__usa__east pos_abs dn">
+                            <img src="./img/Elements_Old/arc_east-usa_oceania_medium.png" alt="lines"
+                                class="line line__usa__east pos_abs dn">
+                            <img src="./img/Elements_Old/arc_east-usa_oceania_large.png" alt="lines"
+                                class="line line__usa__east pos_abs dn">
+                        </div>
+                        <div class="map__north__usa__south__lines pos_rel">
+                            <img src="./img/Elements_Old/arc_east-usa_south-america_small.png" alt="lines"
+                                class="line line__usa__north-south pos_abs dn">
+                            <img src="./img/Elements_Old/arc_east-usa_south-america_medium.png" alt="lines"
+                                class="line line__usa__north-south pos_abs dn">
+                            <img src="./img/Elements_Old/arc_east-usa_south-america_large.png" alt="lines"
+                                class="line line__usa__north-south pos_abs dn">
+                        </div>
+                    </div>
+                    <div class="singapure__lines">
+                        <!-- Singapore -->
+                        <div class="map__asia__lines pos_rel">
+                            <img src="./img/Elements_Old/arc_singapore_north-america_small.png" alt="line"
+                                class="line line__asia-usa pos_abs dn">
+                            <img src="./img/Elements_Old/arc_singapore_north-america_medium.png" alt="line"
+                                class="line line__asia-usa pos_abs dn">
+                            <img src="./img/Elements_Old/arc_singapore_north-america_large.png" alt="line"
+                                class="line line__asia-usa pos_abs dn">
+                        </div>
+                        <div class="map__asia__europe__lines pos_rel">
+                            <img src="./img/Elements_Old/arc_singapore_europe_small.png" alt="lines"
+                                class="line line__asia__europe pos_abs dn">
+                            <img src="./img/Elements_Old/arc_singapore_europe_medium.png" alt="lines"
+                                class="line line__asia__europe pos_abs dn">
+                            <img src="./img/Elements_Old/arc_singapore_europe_large.png" alt="lines"
+                                class="line line__asia__europe pos_abs dn">
+                        </div>
+                        <div class="map__asia__asia__lines pos_rel">
+                            <img src="./img/Elements_Old/arc_singapore_asia_small.png" alt="lines"
+                                class="line line__asia pos_abs dn">
+                            <img src="./img/Elements_Old/arc_singapore_asia_medium.png" alt="lines"
+                                class="line line__asia pos_abs dn">
+                            <img src="./img/Elements_Old/arc_singapore_asia_large.png" alt="lines"
+                                class="line line__asia pos_abs dn">
+                        </div>
+                        <div class="map__asia__oceania__lines pos_rel">
+                            <img src="./img/Elements_Old/arc_singapore_oceania_small.png" alt="lines"
+                                class="line line__asia__east pos_abs dn">
+                            <img src="./img/Elements_Old/arc_singapore_oceania_medium.png" alt="lines"
+                                class="line line__asia__east pos_abs dn">
+                            <img src="./img/Elements_Old/arc_singapore_oceania_large.png" alt="lines"
+                                class="line line__asia__east pos_abs dn">
+                        </div>
+                        <div class="map__asia__south__lines pos_rel">
+                            <img src="./img/Elements_Old/arc_singapore_south-america_small.png" alt="lines"
+                                class="line line__asia__south pos_abs dn">
+                            <img src="./img/Elements_Old/arc_singapore_south-america_medium.png" alt="lines"
+                                class="line line__asia__south pos_abs dn">
+                            <img src="./img/Elements_Old/arc_singapore_south-america_large.png" alt="lines"
+                                class="line line__asia__south pos_abs dn">
+                        </div>
+                        <!-- Singapore end -->
+                    </div>
+                    <div class="europe__lines">
+                        <div class="map__europe__lines pos_rel">
+                            <img src="./img/Elements_Old/arc_germany_north-america_small.png" alt="line"
+                                class="line line__europe-usa pos_abs dn">
+                            <img src="./img/Elements_Old/arc_germany_north-america_medium.png" alt="line"
+                                class="line line__europe-usa pos_abs dn">
+                            <img src="./img/Elements_Old/arc_germany_north-america_large.png" alt="line"
+                                class="line line__europe-usa pos_abs dn">
+                        </div>
+                        <div class="map__europe__europe__lines pos_rel">
+                            <img src="./img/Elements_Old/arc_germany_europe_small.png" alt="lines"
+                                class="line line__europe__europe pos_abs dn">
+                            <img src="./img/Elements_Old/arc_germany_europe_medium.png" alt="lines"
+                                class="line line__europe__europe pos_abs dn">
+                            <img src="./img/Elements_Old/arc_germany_europe_large.png" alt="lines"
+                                class="line line__europe__europe pos_abs dn">
+                        </div>
+                        <div class="map__europe__asia__lines pos_rel">
+                            <img src="./img/Elements_Old/arc_germany_asia_small.png" alt="lines"
+                                class="line line__europe__asia pos_abs dn">
+                            <img src="./img/Elements_Old/arc_germany_asia_medium.png" alt="lines"
+                                class="line line__europe__asia pos_abs dn">
+                            <img src="./img/Elements_Old/arc_germany_asia_large.png" alt="lines"
+                                class="line line__europe__asia pos_abs dn">
+                        </div>
+                        <div class="map__europe__oceania__lines pos_rel">
+                            <img src="./img/Elements_Old/arc_germany_oceania_small.png" alt="lines"
+                                class="line line__europe__east pos_abs dn">
+                            <img src="./img/Elements_Old/arc_germany_oceania_medium.png" alt="lines"
+                                class="line line__europe__east pos_abs dn">
+                            <img src="./img/Elements_Old/arc_germany_oceania_large.png" alt="lines"
+                                class="line line__europe__east pos_abs dn">
+                        </div>
+                        <div class="map__europe__south__lines pos_rel">
+                            <img src="./img/Elements_Old/arc_germany_south-america_small.png" alt="lines"
+                                class="line line__europe__south pos_abs dn">
+                            <img src="./img/Elements_Old/arc_germany_south-america_medium.png" alt="lines"
+                                class="line line__europe__south pos_abs dn">
+                            <img src="./img/Elements_Old/arc_germany_south-america_large.png" alt="lines"
+                                class="line line__europe__south pos_abs dn">
+                        </div>
+                    </div>
+                    <div class="south__usa__lines">
+                        <div class="map__south__usa__lines pos_rel">
+                            <img src="./img/Elements_Old/arc_west-usa_north-america_small.png" alt="line"
+                                class="line line__south__north pos_abs dn">
+                            <img src="./img/Elements_Old/arc_west-usa_north-america_medium.png" alt="line"
+                                class="line line__south__north pos_abs dn">
+                            <img src="./img/Elements_Old/arc_west-usa_north-america_large.png" alt="line"
+                                class="line line__south__north pos_abs dn">
+                        </div>
+                        <div class="map__south__usa__europe__lines pos_rel">
+                            <img src="./img/Elements_Old/arc_west-usa_europe_small.png" alt="lines"
+                                class="line line__south__europe pos_abs dn">
+                            <img src="./img/Elements_Old/arc_west-usa_europe_medium.png" alt="lines"
+                                class="line line__south__europe pos_abs dn">
+                            <img src="./img/Elements_Old/arc_west-usa_europe_large.png" alt="lines"
+                                class="line line__south__europe pos_abs dn">
+                        </div>
+                        <div class="map__south__usa__asia__lines pos_rel">
+                            <img src="./img/Elements_Old/arc_west-usa_asia_small.png" alt="lines"
+                                class="line line__south__asia pos_abs dn">
+                            <img src="./img/Elements_Old/arc_west-usa_asia_medium.png" alt="lines"
+                                class="line line__south__asia pos_abs dn">
+                            <img src="./img/Elements_Old/arc_west-usa_asia_large.png" alt="lines"
+                                class="line line__south__asia pos_abs dn">
+                        </div>
+                        <div class="map__south__usa__oceania__lines pos_rel">
+                            <img src="./img/Elements_Old/arc_west-usa_oceania_small.png" alt="lines"
+                                class="line line__south__east pos_abs dn">
+                            <img src="./img/Elements_Old/arc_west-usa_oceania_medium.png" alt="lines"
+                                class="line line__south__east pos_abs dn">
+                            <img src="./img/Elements_Old/arc_west-usa_oceania_large.png" alt="lines"
+                                class="line line__south__east pos_abs dn">
+                        </div>
+                        <div class="map__south__usa__south__lines pos_rel">
+                            <img src="./img/Elements_Old/arc_west-usa_south-america_small.png" alt="lines"
+                                class="line line__south pos_abs dn">
+                            <img src="./img/Elements_Old/arc_west-usa_south-america_medium.png" alt="lines"
+                                class="line line__south pos_abs dn">
+                            <img src="./img/Elements_Old/arc_west-usa_south-america_large.png" alt="lines"
+                                class="line line__south pos_abs dn">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="table pos_rel dn">
+        <div class="container">
+            <div class="pos_rel">
+                <div class="table__wrapper pos_abs">
+                    <div class="byteCloud__wrapper">
+                        <!-- <div class="table__byteCloud_box">
+                            <div class="table__byteCloud_box_regionName"></div>
+                            <div class="table__byteCloud_box_latency"></div>
+                            <div class="table__byteCloud_box_time"></div>
+                            <div class="table__byteCloud_box_video"></div>
+                        </div> -->
+                    </div>
+                    <div class="object__wrapper">
+                        <!-- <div class="table__object">
+                            <div class="table__object_box_regionName"></div>
+                            <div class="table__object_box_latency"></div>
+                            <div class="table__object_box_time"></div>
+                            <div class="table__object_box_video"></div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="table__title pos_abs">
+                <div class="byteCloud__title pos_abs">ByteCloud</div>
+                <div class="object__title pos_abs">Object Storage</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
